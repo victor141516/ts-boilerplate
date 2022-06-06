@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "strict": true,
-    "module": "ESNext",
+    "module": "CommonJS",
     "moduleResolution": "node",
-    "baseUrl": "src",
+    "baseUrl": "./src",
     "sourceMap": true,
     "target": "es6",
     "lib": ["dom", "esnext"],
@@ -11,6 +11,10 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "typeRoots": ["./src/@types"]
+  },
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
   }
 }
