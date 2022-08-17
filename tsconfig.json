@@ -12,6 +12,7 @@
     "allowSyntheticDefaultImports": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
+    "types": ["node"],
     "typeRoots": ["./src/@types"]
   },
   "ts-node": {
