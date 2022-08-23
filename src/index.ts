@@ -1,5 +1,5 @@
 import { JSDOM } from 'jsdom'
-import { attribute } from './module'
+import { attribute } from 'my-module'
 
 console.log("Let's check...")
 
