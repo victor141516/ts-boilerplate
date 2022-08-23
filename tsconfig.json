@@ -5,7 +5,7 @@
     "moduleResolution": "node",
     "baseUrl": "./src",
     "sourceMap": true,
-    "target": "es6",
+    "target": "es2020",
     "lib": ["dom", "esnext"],
     "outDir": "dist",
     "esModuleInterop": true,
@@ -13,7 +13,8 @@
     "isolatedModules": true,
     "resolveJsonModule": true,
     "types": ["node"],
-    "typeRoots": ["./src/@types"]
+    "typeRoots": ["./src/@types"],
+    "skipLibCheck": true
   },
   "ts-node": {
     "require": ["tsconfig-paths/register"]
