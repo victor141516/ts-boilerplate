@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "ts-node src/index.ts",
-    "build": "tsc && babel dist -d dist",
+    "build:nocheck": "babel src --extensions '.ts' -d dist --delete-dir-on-start",
+    "build": "npm run lint:tsc && npm run build:nocheck",
+    "build:declaration": "tsc --emitDeclarationOnly",
     "run-compiled": "node",
     "lint": "eslint src/**",
     "lint:tsc": "tsc --noEmit"
@@ -30,6 +32,7 @@
     "@babel/cli": "^7.18.10",
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
+    "@babel/preset-typescript": "^7.18.6",
     "@types/babel__core": "^7.1.19",
     "@types/babel__preset-env": "^7.9.2",
     "@types/eslint": "^8.4.6",

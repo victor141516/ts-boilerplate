@@ -1,12 +1,11 @@
-const path = require('path')
-
 module.exports = {
-  presets: ['@babel/preset-env'],
+  presets: ['@babel/preset-env', '@babel/preset-typescript'],
   plugins: [
     [
       require.resolve('babel-plugin-module-resolver'),
       {
-        root: './dist',
+        root: './src',
+        extensions: ['.ts'],
       },
     ],
   ],
